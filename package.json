@@ -1,0 +1,22 @@
+{
+    "name": "baku_32tabaku",
+    "displayName": "Baku Tabaku",
+    "version": "0.0.1",
+    "description": "Baku Tabaku",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "ecosystem:cordova"
+    ],
+    "author": "Cak Sono Game Studio",
+    "devDependencies": {
+        "cordova-plugin-ionic-webview": "5.0.0"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-ionic-webview": {}
+        }
+    }
+}
