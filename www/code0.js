@@ -11,6 +11,12 @@ gdjs.MainMenuCode.GDTitleLogoObjects3= [];
 gdjs.MainMenuCode.GDEnableMusicObjects1= [];
 gdjs.MainMenuCode.GDEnableMusicObjects2= [];
 gdjs.MainMenuCode.GDEnableMusicObjects3= [];
+gdjs.MainMenuCode.GDTxtExitObjects1= [];
+gdjs.MainMenuCode.GDTxtExitObjects2= [];
+gdjs.MainMenuCode.GDTxtExitObjects3= [];
+gdjs.MainMenuCode.GDTxtAboutObjects1= [];
+gdjs.MainMenuCode.GDTxtAboutObjects2= [];
+gdjs.MainMenuCode.GDTxtAboutObjects3= [];
 
 gdjs.MainMenuCode.conditionTrue_0 = {val:false};
 gdjs.MainMenuCode.condition0IsTrue_0 = {val:false};
@@ -98,7 +104,37 @@ gdjs.MainMenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRele
 }
 
 
-};gdjs.MainMenuCode.eventsList2 = function(runtimeScene) {
+};gdjs.MainMenuCode.mapOfGDgdjs_46MainMenuCode_46GDTxtExitObjects1Objects = Hashtable.newFrom({"TxtExit": gdjs.MainMenuCode.GDTxtExitObjects1});gdjs.MainMenuCode.eventsList2 = function(runtimeScene) {
+
+{
+
+
+gdjs.MainMenuCode.condition0IsTrue_0.val = false;
+{
+gdjs.MainMenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+}if (gdjs.MainMenuCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.stopGame(runtimeScene);
+}}
+
+}
+
+
+};gdjs.MainMenuCode.mapOfGDgdjs_46MainMenuCode_46GDTxtAboutObjects1Objects = Hashtable.newFrom({"TxtAbout": gdjs.MainMenuCode.GDTxtAboutObjects1});gdjs.MainMenuCode.eventsList3 = function(runtimeScene) {
+
+{
+
+
+gdjs.MainMenuCode.condition0IsTrue_0.val = false;
+{
+gdjs.MainMenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+}if (gdjs.MainMenuCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "About", false);
+}}
+
+}
+
+
+};gdjs.MainMenuCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -159,6 +195,38 @@ gdjs.MainMenuCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("TxtExit"), gdjs.MainMenuCode.GDTxtExitObjects1);
+
+gdjs.MainMenuCode.condition0IsTrue_0.val = false;
+{
+gdjs.MainMenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MainMenuCode.mapOfGDgdjs_46MainMenuCode_46GDTxtExitObjects1Objects, runtimeScene, true, false);
+}if (gdjs.MainMenuCode.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.MainMenuCode.eventsList2(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("TxtAbout"), gdjs.MainMenuCode.GDTxtAboutObjects1);
+
+gdjs.MainMenuCode.condition0IsTrue_0.val = false;
+{
+gdjs.MainMenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MainMenuCode.mapOfGDgdjs_46MainMenuCode_46GDTxtAboutObjects1Objects, runtimeScene, true, false);
+}if (gdjs.MainMenuCode.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.MainMenuCode.eventsList3(runtimeScene);} //End of subevents
+}
+
+}
+
+
 };
 
 gdjs.MainMenuCode.func = function(runtimeScene) {
@@ -176,8 +244,14 @@ gdjs.MainMenuCode.GDTitleLogoObjects3.length = 0;
 gdjs.MainMenuCode.GDEnableMusicObjects1.length = 0;
 gdjs.MainMenuCode.GDEnableMusicObjects2.length = 0;
 gdjs.MainMenuCode.GDEnableMusicObjects3.length = 0;
+gdjs.MainMenuCode.GDTxtExitObjects1.length = 0;
+gdjs.MainMenuCode.GDTxtExitObjects2.length = 0;
+gdjs.MainMenuCode.GDTxtExitObjects3.length = 0;
+gdjs.MainMenuCode.GDTxtAboutObjects1.length = 0;
+gdjs.MainMenuCode.GDTxtAboutObjects2.length = 0;
+gdjs.MainMenuCode.GDTxtAboutObjects3.length = 0;
 
-gdjs.MainMenuCode.eventsList2(runtimeScene);
+gdjs.MainMenuCode.eventsList4(runtimeScene);
 return;
 
 }
