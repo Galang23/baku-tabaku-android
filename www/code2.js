@@ -29,6 +29,9 @@ gdjs.AboutCode.GDTxtItchIoObjects3= [];
 gdjs.AboutCode.GDCopyrightObjects1= [];
 gdjs.AboutCode.GDCopyrightObjects2= [];
 gdjs.AboutCode.GDCopyrightObjects3= [];
+gdjs.AboutCode.GDTxtAdendumObjects1= [];
+gdjs.AboutCode.GDTxtAdendumObjects2= [];
+gdjs.AboutCode.GDTxtAdendumObjects3= [];
 
 gdjs.AboutCode.conditionTrue_0 = {val:false};
 gdjs.AboutCode.condition0IsTrue_0 = {val:false};
@@ -236,6 +239,9 @@ gdjs.AboutCode.GDTxtItchIoObjects3.length = 0;
 gdjs.AboutCode.GDCopyrightObjects1.length = 0;
 gdjs.AboutCode.GDCopyrightObjects2.length = 0;
 gdjs.AboutCode.GDCopyrightObjects3.length = 0;
+gdjs.AboutCode.GDTxtAdendumObjects1.length = 0;
+gdjs.AboutCode.GDTxtAdendumObjects2.length = 0;
+gdjs.AboutCode.GDTxtAdendumObjects3.length = 0;
 
 gdjs.AboutCode.eventsList4(runtimeScene);
 return;

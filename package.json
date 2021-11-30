@@ -1,7 +1,7 @@
 {
     "name": "baku_32tabaku",
     "displayName": "Baku Tabaku",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Baku Tabaku",
     "main": "index.js",
     "scripts": {
